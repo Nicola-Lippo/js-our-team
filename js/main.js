@@ -1,5 +1,6 @@
 'use strict'
 console.log('eccomi')
+//MILESTONE 0
 //Creare l’array di oggetti con le informazioni fornite
 const myArrayTeams = [
     {
@@ -38,5 +39,6 @@ const myArrayTeams = [
         img: '',
     },
 ];
-
+//MILESTONE 1
+//Stampare su console, per ogni membro del team, le informazioni
 console.log(myArrayTeams)
