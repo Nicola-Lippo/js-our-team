@@ -41,4 +41,15 @@ const myArrayTeams = [
 ];
 //MILESTONE 1
 //Stampare su console, per ogni membro del team, le informazioni
-console.log(myArrayTeams)
+console.log(myArrayTeams);
+//MILESTONE 2
+//Stampare le stesse informazioni su DOM sottoforma di stringhe
+const ul = document.querySelector('.team');
+for (let i = 0; i < myArrayTeams.length; i++) {
+    //creo una variabile per leggere i valori degli oggetti
+    const attributi = myArrayTeams[i];
+    //stampo nome
+    const li = document.createElement('li');
+    li.append(attributi.nome);
+    li.append(ul);
+}
