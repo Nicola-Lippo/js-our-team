@@ -48,8 +48,21 @@ const ul = document.querySelector('.team');
 for (let i = 0; i < myArrayTeams.length; i++) {
     //creo una variabile per leggere i valori degli oggetti
     const attributi = myArrayTeams[i];
-    //stampo nome
+    console.log(attributi)
     const li = document.createElement('li');
-    li.append(attributi.nome);
-    li.append(ul);
+    //stampo nome
+    const h2 = document.createElement('h2');
+    h2.append(attributi.nome);
+    li.append(h2);
+    ul.append(li);
+    //stampo ruolo
+    const div = document.createElement('div');
+    div.append(attributi.ruolo);
+    li.append(div);
+    ul.append(li);
+    //stampo foto
+    const img = document.createElement('img');
+    img.append(attributi.img);
+    li.append(img);
+    ul.append(li);
 }
